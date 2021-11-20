@@ -1,0 +1,32 @@
+[
+    
+    {
+        "name": "default",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "postgres",
+        "password": "1998",
+        "database": "my_service",
+        "entities": [
+            "./build/modules/**/infra/typeorm/entities/*.js"
+        ],
+        "migrations": [
+            "./build/shared/infra/typeorm/migrations/*.js"
+        ],
+        "cli": {
+            "migrationsDir": "./build/shared/infra/typeorm/migrations"
+        }
+    },
+    {
+        "name": "mongo",
+        "type": "mongodb",
+        "host": "localhost",
+        "port": 27017,
+        "database": "gotech",
+        "useUnifiedTopology": true,
+        "entities": [
+            "./build/modules/**/infra/typeorm/schemas/*.js"
+        ]
+    }
+]
