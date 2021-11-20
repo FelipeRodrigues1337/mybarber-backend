@@ -1,3 +1,7 @@
+- yarn
+- Configurar novo arquivo .env
+- Configurar banco de dados postgresql
+
 # Recuperação de senha
 **RF**
  - O usuário deve poder recuperar sua senha informando o seu e-mail;
@@ -37,9 +41,7 @@
 
 **RNF**
 - Os agendamentos do prestador no dia devem ser armazenados em cache
-- As notificações do prestador devem ser armazenadas no MongoDB;
-- As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io;
-
+- 
 **RN**
 
 
