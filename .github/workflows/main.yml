@@ -33,7 +33,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{secrets.SSH_KEY}}
           source: "."
-          target: "/home/nodeproject/test"  
+          target: "test"  
 
      #Instalar dependencias NPM/YARN
      #Executar build
