@@ -40,7 +40,7 @@
 - O envio de e-mails deve acontecer em segundo plano (background);
 
 **RN**
-- O link enviado por email para resetar senha, deve expirar em 2h;
+- O link enviado por email para resetar senha, deve expirar em 1h;
 
 - O usuário precisa confirmar a nova senha ao resetar sua senha;
 
