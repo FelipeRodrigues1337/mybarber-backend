@@ -60,7 +60,7 @@
 - O usuário deve poder listar seus agendamentos de um dia específico;
 **RNF**
 - Os agendamentos do prestador no dia devem ser armazenados em cache
-**RN**
+
 
 # Rotas
 https://docs.google.com/document/d/13afKsjuedM1N7Vi61lxL3PrJZJr8DUfC2Tm9-YzU0mQ/edit?usp=sharing
