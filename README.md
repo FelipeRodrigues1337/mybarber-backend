@@ -1,6 +1,28 @@
-- yarn
-- Configurar novo arquivo .env
-- Configurar banco de dados postgresql
+# Preparando ambiente
+
+**Exemplo de comandos para criar imagens Docker:**
+
+- docker run -d --name postgre -e POSTGRESQL_PASSWORD=**** -e POSTGRESQL_USERNAME=**** -e POSTGRESQL_DATABASE=*** -p ****:5432 bitnami/postgresql:latest
+
+- docker run -d --name mongodb -e MONGODB_USERNAME=**** -e MONGODB_PASSWORD=**** -e MONGODB_ROOT_PASSWORD=**** -e MONGODB_DATABASE=**** -p ****:27017 bitnami/mongodb:latest
+
+- docker run -d --name redis -e REDIS_PASSWORD=**** -p ****:6379 bitnami/redis:lates
+
+
+**Configurar Projeto:**
+ - Instalar node 14.15.4 e yarn 1.22.5
+ 
+ - Instalar dependências: yarn
+
+ - Configure um novo arquivo ormconfig.json a partir do ormconfig.example.json de acordo com os bancos criados
+
+ - Configure um novo arquivo .env a partir do env.example
+	
+ - Execute: ./node_modules/.bin/typeorm migration:run
+
+ - Execute: yarn build
+	
+ - Rodar projeto: yarn dev:server
 
 # Recuperação de senha
 **RF**
@@ -41,23 +63,7 @@
 
 **RNF**
 - Os agendamentos do prestador no dia devem ser armazenados em cache
-- 
 **RN**
 
-
-# Agendamento de serviços
-
-**RF**
-- O usuário deve poder listar todos os prestadores de serviços cadastrados;
-- O usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador;
-- O usuário deve poder listar horários disponíveis em um dia específico de um prestador;
-- O usuário deve poder realizar um novo agendamento com um prestador;
-**RNF**
-- A listagem de prestadores deve ser armazenada em cache;
-
-**RN**
-- Cada agendamento deve durar 1h exatamente;
-- OS agendamentos devem estar disponíveis entre 8h ás 18h (Primeiro ás 8h, último ás 17h);
-- O usuário não pode agendar em um horário já ocupado;
-- O usuário não pode agendar em um horário que já passou;
-- O usuário não pode agendar serviços consigo mesmo;
+# Rotas
+https://docs.google.com/document/d/13afKsjuedM1N7Vi61lxL3PrJZJr8DUfC2Tm9-YzU0mQ/edit?usp=sharing
